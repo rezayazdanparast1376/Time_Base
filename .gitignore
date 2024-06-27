@@ -1,0 +1,15 @@
+*.vcode
+*.json
+*.o
+*.d
+*.su
+*.cyclo
+*.list
+*.elf
+*.bin
+*.hex
+*.map
+*.mk
+Debug/
+Debug/*
+
