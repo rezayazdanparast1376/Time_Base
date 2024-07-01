@@ -1,5 +1,10 @@
 #include "config_manager.h"
+#include "time.h"
 
+void routine_10ms(void);
+void routine_100ms(void);
+void routine_500ms(void);
+void routine_5s(void);
 
 
 
@@ -10,13 +15,53 @@ int main(void)
   config_functions();
 
   while (1) {
+    timing_routine();
 
+    
   }
+}
+
+  
+  
+  
+
+/**
+ * @brief Must be execute each 10ms
+ * 
+ */
+void routine_10ms(void){
+  // HAL_GPIO_TogglePin(LED_1_PORT, LED_1_PIN);
 }
 
 
 
+/**
+ * @brief Must be execute each 100ms
+ * 
+ */
+void routine_100ms(void){
+  // HAL_GPIO_TogglePin(LED_2_PORT, LED_2_PIN);
+}
 
+
+
+/**
+ * @brief Must be execute each 500ms
+ * 
+ */
+void routine_500ms(void){
+}
+
+
+
+/**
+ * @brief Must be execute each 5ms
+ * 
+ */
+void routine_5s(void){
+  HAL_GPIO_TogglePin(LED_3_PORT, LED_3_PIN);
+
+}
 
 
 

@@ -3,6 +3,7 @@
 
 
 
+
 void config_functions(void) {
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
@@ -15,6 +16,7 @@ void config_functions(void) {
   MX_TIM2_Init();
   MX_USART1_UART_Init();
 
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14, GPIO_PIN_RESET);
 
 }
 
