@@ -15,6 +15,7 @@ void config_functions(void) {
   MX_GPIO_Init();
   MX_TIM2_Init();
   MX_USART1_UART_Init();
+  HAL_TIM_Base_Start_IT(&htim2);
 
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14, GPIO_PIN_RESET);
 

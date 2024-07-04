@@ -40,7 +40,7 @@ void routine_10ms(void){
  * 
  */
 void routine_100ms(void){
-  // HAL_GPIO_TogglePin(LED_2_PORT, LED_2_PIN);
+  HAL_GPIO_TogglePin(LED_2_PORT, LED_2_PIN);
 }
 
 
@@ -59,7 +59,7 @@ void routine_500ms(void){
  * 
  */
 void routine_5s(void){
-  HAL_GPIO_TogglePin(LED_3_PORT, LED_3_PIN);
+  // HAL_GPIO_TogglePin(LED_3_PORT, LED_3_PIN);
 
 }
 
